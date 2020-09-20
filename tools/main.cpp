@@ -47,7 +47,7 @@ while (i <= 100) {
 
 s << i;
 
-//string st = "python3 tools/scan.py " + host + " " + s.str();
+st = "python3 tools/cs.py " + host + " " + s.str();
 
 system(st.c_str());
 
