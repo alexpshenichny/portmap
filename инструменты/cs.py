@@ -12,8 +12,10 @@ try:
  def portscan(h, p):
   if s.connect_ex((h, p)):
    print("Your port " + str(p) + " " + "is close!")
+   s.close()
   else:
    print("Your port " + str(p) + " " + "is open!")
+   s.close()
    os.system("./tools/file tools/result.txt " + str(p) + ", ")
 
  portscan(host, port)
